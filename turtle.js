@@ -116,7 +116,7 @@ class Turtle {
 	}
 	toKeySteps() {
 		let totalSteps = this.state.path.length;
-		console.log('Total Steps: ' + totalSteps);
+		//console.log('Total Steps: ' + totalSteps);
 
 		// normalise all steps
 		let steps = this.state.path;
@@ -141,7 +141,7 @@ class Turtle {
 				turn
 			});
 		});
-		console.log(normalisedSteps);
+		//console.log(normalisedSteps);
 
 		// translate from relative to absolute property definitions
 		// issue with diagonals
@@ -165,7 +165,7 @@ class Turtle {
 				turn: curTurn
 			});
 		});
-		console.log(absoluteSteps);
+		//console.log(absoluteSteps);
 
 		// translate absoluteSteps to frames
 		// each step is a transition between 2 frames
@@ -191,7 +191,7 @@ class Turtle {
 		let timeline = this.buildTimeline(frameArray, moveLength);
 
 		// output
-		console.log(this.keyFrames(this.id, timeline));
+		//console.log(this.keyFrames(this.id, timeline));
 		return timeline;
 	}
 	testMoveLength() {
@@ -208,8 +208,8 @@ class Turtle {
 		// apply frames to duration // rework
 		let timeline = {};
 		let offsetDistance = 0;
-		console.log('Moves Length: ' + moveLength);
-		console.log('Frame Length: ' + frameArray.length);
+		//console.log('Moves Length: ' + moveLength);
+		//console.log('Frame Length: ' + frameArray.length);
 		frameArray.forEach((frame) => {
 			//let key = frame[0][0] + '%, ' + frame[0][1] + '%';
 			let key = frame[0][0] + '%';
@@ -224,15 +224,15 @@ class Turtle {
 		return timeline;
 	}
 	keyFrames(key, body) {
-		let frameString = "\n\t@keyframes " + key + " {";
+		let frameString = "\n@keyframes " + key + " {";
 		Object.entries(body).forEach((item) => {
-			frameString += "\n\t\t" + item[0] + ' {';
+			frameString += "\n\t" + item[0] + ' {';
 			frameString += Object.entries(item[1]).reduce((prev, value) => {
-				return prev + "\n\t\t\t" + value[0] + ': ' + value[1] + ';';
+				return prev + "\n\t\t" + value[0] + ': ' + value[1] + ';';
 			}, "");
-			frameString += "\n\t\t}";
+			frameString += "\n\t}";
 		});
-		frameString += "\n\t}";
+		frameString += "\n}";
 		return frameString;
 	}
 };

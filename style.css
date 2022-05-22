@@ -1,0 +1,336 @@
+
+svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+:root {
+	--path1: "M 0 0 L 0 -100 L 0 0 L 100 0 L 100 -100 L 100 -200 L 100 -300 L 100 -200 L 100 -300 L 100 -200 L 100 -100 L 100 -200 L 100 -100 L 100 -200 L 100 -100 L 100 -200 L 100 -100 L 0 -100 L 100 -200 L 0 -100 L 100 0";
+	--line: #bbffbb;
+	--box: #ddddff;
+}
+.path1 {
+	d: path(var(--path1));
+	stroke: var(--line);
+	stroke-width: 5px;
+	fill: none;
+}
+#default {
+	transform: translate(-200px, 200px) translate(50%, 50%);
+}
+.ninja-head {
+	r: 6;
+	fill: #ff8f00;
+	stroke: #ffd54f;
+	stroke-width: 2px;
+	fill-opacity: 1;
+}
+.ninja-body {
+	rx: 2;
+	fill: #ff8f00;
+	stroke: #ffd54f;
+	stroke-width: 2px;
+	fill-opacity: 1;
+	width: 10px;
+	height: 10px;
+	transform: translate(-5px, -25px);
+}
+.cursor {
+	rx: 6;
+	fill: #bbbbff;
+	stroke: var(--box);
+	stroke-width: 4px;
+	fill-opacity: 0.5;
+	width: 40px;
+	height: 40px;
+	transform: translate(-20px, -20px);
+}
+.turner {
+	offset-path: path(var(--path1));
+	offset-rotate: 0deg;
+	animation: move 70s linear infinite normal forwards;
+}
+
+@keyframes move {
+	0.00% {
+		offset-distance: 0.00%;
+		transform: rotate(0deg);
+	}
+	1.45% {
+		offset-distance: 0.00%;
+		transform: rotate(0deg);
+	}
+	2.90% {
+		offset-distance: 4.71%;
+		transform: rotate(0deg);
+	}
+	4.35% {
+		offset-distance: 4.71%;
+		transform: rotate(0deg);
+	}
+	5.80% {
+		offset-distance: 4.71%;
+		transform: rotate(-180deg);
+	}
+	7.25% {
+		offset-distance: 4.71%;
+		transform: rotate(-180deg);
+	}
+	8.70% {
+		offset-distance: 4.71%;
+		transform: rotate(0deg);
+	}
+	10.14% {
+		offset-distance: 4.71%;
+		transform: rotate(0deg);
+	}
+	11.59% {
+		offset-distance: 9.42%;
+		transform: rotate(0deg);
+	}
+	13.04% {
+		offset-distance: 9.42%;
+		transform: rotate(90deg);
+	}
+	14.49% {
+		offset-distance: 9.42%;
+		transform: rotate(90deg);
+	}
+	15.94% {
+		offset-distance: 14.12%;
+		transform: rotate(90deg);
+	}
+	17.39% {
+		offset-distance: 14.12%;
+		transform: rotate(0deg);
+	}
+	18.84% {
+		offset-distance: 14.12%;
+		transform: rotate(0deg);
+	}
+	20.29% {
+		offset-distance: 14.12%;
+		transform: rotate(90deg);
+	}
+	21.74% {
+		offset-distance: 14.12%;
+		transform: rotate(0deg);
+	}
+	23.19% {
+		offset-distance: 14.12%;
+		transform: rotate(0deg);
+	}
+	24.64% {
+		offset-distance: 14.12%;
+		transform: rotate(-90deg);
+	}
+	26.09% {
+		offset-distance: 14.12%;
+		transform: rotate(0deg);
+	}
+	27.54% {
+		offset-distance: 14.12%;
+		transform: rotate(0deg);
+	}
+	28.99% {
+		offset-distance: 14.12%;
+		transform: rotate(90deg);
+	}
+	30.43% {
+		offset-distance: 14.12%;
+		transform: rotate(90deg);
+	}
+	31.88% {
+		offset-distance: 14.12%;
+		transform: rotate(0deg);
+	}
+	33.33% {
+		offset-distance: 18.83%;
+		transform: rotate(0deg);
+	}
+	34.78% {
+		offset-distance: 18.83%;
+		transform: rotate(0deg);
+	}
+	36.23% {
+		offset-distance: 23.54%;
+		transform: rotate(0deg);
+	}
+	37.68% {
+		offset-distance: 23.54%;
+		transform: rotate(0deg);
+	}
+	39.13% {
+		offset-distance: 28.25%;
+		transform: rotate(0deg);
+	}
+	40.58% {
+		offset-distance: 28.25%;
+		transform: rotate(0deg);
+	}
+	42.03% {
+		offset-distance: 32.95%;
+		transform: rotate(0deg);
+	}
+	43.48% {
+		offset-distance: 32.95%;
+		transform: rotate(0deg);
+	}
+	44.93% {
+		offset-distance: 37.66%;
+		transform: rotate(0deg);
+	}
+	46.38% {
+		offset-distance: 37.66%;
+		transform: rotate(-90deg);
+	}
+	47.83% {
+		offset-distance: 37.66%;
+		transform: rotate(-90deg);
+	}
+	49.28% {
+		offset-distance: 37.66%;
+		transform: rotate(-180deg);
+	}
+	50.72% {
+		offset-distance: 37.66%;
+		transform: rotate(-180deg);
+	}
+	52.17% {
+		offset-distance: 42.37%;
+		transform: rotate(-180deg);
+	}
+	53.62% {
+		offset-distance: 42.37%;
+		transform: rotate(-180deg);
+	}
+	55.07% {
+		offset-distance: 42.37%;
+		transform: rotate(-180deg);
+	}
+	56.52% {
+		offset-distance: 47.08%;
+		transform: rotate(-180deg);
+	}
+	57.97% {
+		offset-distance: 47.08%;
+		transform: rotate(-270deg);
+	}
+	59.42% {
+		offset-distance: 47.08%;
+		transform: rotate(-270deg);
+	}
+	60.87% {
+		offset-distance: 47.08%;
+		transform: rotate(-360deg);
+	}
+	62.32% {
+		offset-distance: 51.78%;
+		transform: rotate(-360deg);
+	}
+	63.77% {
+		offset-distance: 51.78%;
+		transform: rotate(-450deg);
+	}
+	65.22% {
+		offset-distance: 51.78%;
+		transform: rotate(-450deg);
+	}
+	66.67% {
+		offset-distance: 51.78%;
+		transform: rotate(-540deg);
+	}
+	68.12% {
+		offset-distance: 51.78%;
+		transform: rotate(-540deg);
+	}
+	69.57% {
+		offset-distance: 56.49%;
+		transform: rotate(-540deg);
+	}
+	71.01% {
+		offset-distance: 56.49%;
+		transform: rotate(-540deg);
+	}
+	72.46% {
+		offset-distance: 56.49%;
+		transform: rotate(-540deg);
+	}
+	73.91% {
+		offset-distance: 61.20%;
+		transform: rotate(-540deg);
+	}
+	75.36% {
+		offset-distance: 61.20%;
+		transform: rotate(-540deg);
+	}
+	76.81% {
+		offset-distance: 65.91%;
+		transform: rotate(-540deg);
+	}
+	78.26% {
+		offset-distance: 65.91%;
+		transform: rotate(-540deg);
+	}
+	79.71% {
+		offset-distance: 70.61%;
+		transform: rotate(-540deg);
+	}
+	81.16% {
+		offset-distance: 70.61%;
+		transform: rotate(-540deg);
+	}
+	82.61% {
+		offset-distance: 75.32%;
+		transform: rotate(-540deg);
+	}
+	84.06% {
+		offset-distance: 75.32%;
+		transform: rotate(-540deg);
+	}
+	85.51% {
+		offset-distance: 75.32%;
+		transform: rotate(-810deg);
+	}
+	86.96% {
+		offset-distance: 80.03%;
+		transform: rotate(-810deg);
+	}
+	88.41% {
+		offset-distance: 80.03%;
+		transform: rotate(-720deg);
+	}
+	89.86% {
+		offset-distance: 80.03%;
+		transform: rotate(-720deg);
+	}
+	91.30% {
+		offset-distance: 80.03%;
+		transform: rotate(-675deg);
+	}
+	92.75% {
+		offset-distance: 86.69%;
+		transform: rotate(-675deg);
+	}
+	94.20% {
+		offset-distance: 86.69%;
+		transform: rotate(-675deg);
+	}
+	95.65% {
+		offset-distance: 93.34%;
+		transform: rotate(-675deg);
+	}
+	97.10% {
+		offset-distance: 93.34%;
+		transform: rotate(-765deg);
+	}
+	98.55% {
+		offset-distance: 100.00%;
+		transform: rotate(-765deg);
+	}
+	100.00% {
+		offset-distance: 100.00%;
+		transform: rotate(-765deg);
+	}
+}
